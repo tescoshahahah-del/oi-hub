@@ -94,6 +94,6 @@ function Index() {
 
     <div className="chat"><div className="chat-avatar">B</div><b>Dúvidas? Fale conosco!</b><span className="online">● Nossa equipe está online.</span><button><MessageCircle size={15}/> Converse com a equipe</button><div className="chat-round"><MessageCircle/></div></div>
 
-    <footer><div><a className="logo"><span className="logo-box">B</span><b>Blue<span>Banana</span></b></a><p>Loja gamer com entrega rápida e suporte eficiente.</p></div><div><b>Acesse:</b><a>Início</a><a>Loja</a><a>FAQ</a></div><div><b>Atendimento:</b><a>Suporte</a><a>Discord</a></div></div></footer>
+    <footer><div><a className="logo"><span className="logo-box">B</span><b>Blue<span>Banana</span></b></a><p>Loja gamer com entrega rápida e suporte eficiente.</p></div><div><b>Acesse:</b><a>Início</a><a>Loja</a><a>FAQ</a></div><div><b>Atendimento:</b><a>Suporte</a><a>Discord</a></div></footer>
   </main>
 }
