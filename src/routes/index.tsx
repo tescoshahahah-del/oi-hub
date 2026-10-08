@@ -5,16 +5,16 @@ import { ChevronDown, Headphones, Search, ShieldCheck, ShoppingCart, Zap, UserRo
 export const Route = createFileRoute("/")({ component: Index });
 
 const categories = [
-  ["Blox Fruits","Veja os itens disponíveis desta categoria.","🎮","blox"],
+  ["Blox Fruits","Veja os itens disponíveis desta categoria.","🍎","blox"],
   ["Gamepass Blox Fruits","Veja os itens disponíveis desta categoria.","🎟️","gamepass"],
-  ["Murder Mystery 2","Veja os itens disponíveis desta categoria.","🔪","mm2"],
+  ["Murder Mystery 2","Veja os itens disponíveis desta categoria.","🎭","mm2"],
   ["Roube um Brainrot","Veja os itens disponíveis desta categoria.","🧠","brainrot"],
   ["Roube um ovo","Veja os itens disponíveis desta categoria.","🥚","egg"],
   ["Brookhaven 🏠 RP","Veja os itens disponíveis desta categoria.","🏠","brook"],
-  ["Grow A Garden 2","Veja os itens disponíveis desta categoria.","🌱","garden"],
+  ["Grow A Garden 2","Veja os itens disponíveis desta categoria.","🍓","garden"],
   ["+1 Teclado de Fuga de Velocidade","Veja os itens disponíveis desta categoria.","⌨️","keyboard"],
-  ["RIVAIS","Veja os itens disponíveis desta categoria.","🎯","rivals"],
-  ["Adopt Me!","Veja os itens disponíveis desta categoria.","🐾","adopt"],
+  ["RIVAIS","Veja os itens disponíveis desta categoria.","🎮","rivals"],
+  ["Adopt Me!","Veja os itens disponíveis desta categoria.","🐶","adopt"],
   ["Servidores Privados+","Veja os itens disponíveis desta categoria.","🖥️","server"],
 ];
 
