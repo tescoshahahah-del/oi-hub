@@ -5,17 +5,17 @@ import { ChevronDown, Headphones, Search, ShieldCheck, ShoppingCart, Zap, UserRo
 export const Route = createFileRoute("/")({ component: Index });
 
 const categories = [
-  ["Blox Fruits","Veja os itens disponíveis desta categoria.","🍎","blox"],
-  ["Gamepass Blox Fruits","Veja os itens disponíveis desta categoria.","🎟️","gamepass"],
-  ["Murder Mystery 2","Veja os itens disponíveis desta categoria.","🎭","mm2"],
-  ["Roube um Brainrot","Veja os itens disponíveis desta categoria.","🧠","brainrot"],
-  ["Roube um ovo","Veja os itens disponíveis desta categoria.","🥚","egg"],
-  ["Brookhaven 🏠 RP","Veja os itens disponíveis desta categoria.","🏠","brook"],
-  ["Grow A Garden 2","Veja os itens disponíveis desta categoria.","🍓","garden"],
-  ["+1 Teclado de Fuga de Velocidade","Veja os itens disponíveis desta categoria.","⌨️","keyboard"],
-  ["RIVAIS","Veja os itens disponíveis desta categoria.","🎮","rivals"],
-  ["Adopt Me!","Veja os itens disponíveis desta categoria.","🐶","adopt"],
-  ["Servidores Privados+","Veja os itens disponíveis desta categoria.","🖥️","server"],
+  ["Blox Fruits","Veja os itens disponíveis desta categoria.","BF","blox"],
+  ["Gamepass Blox Fruits","Veja os itens disponíveis desta categoria.","GP","gamepass"],
+  ["Murder Mystery 2","Veja os itens disponíveis desta categoria.","MM2","mm2"],
+  ["Roube um Brainrot","Veja os itens disponíveis desta categoria.","RB","brainrot"],
+  ["Roube um ovo","Veja os itens disponíveis desta categoria.","OVO","egg"],
+  ["Brookhaven 🏠 RP","Veja os itens disponíveis desta categoria.","RP","brook"],
+  ["Grow A Garden 2","Veja os itens disponíveis desta categoria.","GAG","garden"],
+  ["+1 Teclado de Fuga de Velocidade","Veja os itens disponíveis desta categoria.","+1","keyboard"],
+  ["RIVAIS","Veja os itens disponíveis desta categoria.","R","rivals"],
+  ["Adopt Me!","Veja os itens disponíveis desta categoria.","AM","adopt"],
+  ["Servidores Privados+","Veja os itens disponíveis desta categoria.","SP","server"],
 ];
 
 const banners = [
@@ -65,9 +65,9 @@ function Index() {
     <section className="content">
       <div className="section-pill"><List size={14}/> Jogos disponíveis</div>
       <div className="category-grid">
-        {filtered.map(([name,desc,icon])=><article className="game-card" key={name}>
-          <div className="game-art"><span>{icon}</span></div>
-          <div className="game-info"><h3>{name}</h3><p>{desc}</p><button>Ver produtos <ArrowRight size={15}/></button></div>
+        {filtered.map(([name,desc,icon,slug])=><article className={"game-card game-"+slug} key={name}>
+          <div className="game-art"><div className="art-glow"/><span>{icon}</span><div className="art-shine"/></div>
+          <div className="game-info"><h3>{name}</h3><p>{desc}</p><button>Ver produtos <ArrowRight size={16}/></button></div>
         </article>)}
       </div>
 
